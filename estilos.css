@@ -1,0 +1,90 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background: darkgray;        
+}
+
+h1 {
+    margin: 50px 0px;
+}
+
+.menu {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.menuitem {
+    padding: 20px;
+    margin: 10px;
+    background: black;
+    color: darkgray;
+    border-radius: 10px;
+    width: calc(100% - 60px);
+    display: inline-block;
+}
+      
+.back {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: black;
+    color: darkgray;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.contents {
+    height: 80vh;
+    overflow-y: auto;
+    padding: 0px 40px;
+}
+
+h3 {
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.painel {
+    margin: 10px 0px;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.painel > .titulo {
+    border-radius: 9px 9px 0px 0px;
+    line-height: 2em;
+    background: black;
+    display: inline-block;
+    color: darkgray;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+.painel > .texto {
+    margin: 10px;
+}
+
+.todo-list {
+    text-align: left;
+    margin: 0px 80px;
+}
+
+.todo-list > li {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+
+.todo-list > li::before {
+    margin-left: -40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.todo-list > li.checked::before {
+    color: green;
+    content: "✓";
+    font-size: 30px;
+}
